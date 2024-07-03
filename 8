@@ -1,0 +1,21 @@
+#include <iostream>
+
+int sumRange(int start, int end) {
+    int sum = 0;
+    if (start > end) std::swap(start, end);
+    for (int i = start; i <= end; ++i) {
+        sum += i;
+    }
+    return sum;
+}
+
+int main() {
+    int num1, num2;
+    std::cout << "Введите первое число: ";
+    std::cin >> num1;
+    std::cout << "Введите второе число: ";
+    std::cin >> num2;
+
+    std::cout << "Сумма чисел в диапазоне между " << num1 << " и " << num2 << " = " << sumRange(num1, num2) << std::endl;
+    return 0;
+}
