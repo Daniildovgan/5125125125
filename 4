@@ -1,0 +1,13 @@
+#include <iostream>
+
+int cube(int n) {
+    return n * n * n;
+}
+
+int main() {
+    int number;
+    std::cout << "Введите число: ";
+    std::cin >> number;
+    std::cout << "Куб числа " << number << " = " << cube(number) << std::endl;
+    return 0;
+}
