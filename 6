@@ -1,0 +1,19 @@
+#include <iostream>
+
+bool isPositive(int n) {
+    return n > 0;
+}
+
+int main() {
+    int number;
+    std::cout << "Введите число: ";
+    std::cin >> number;
+
+    if (isPositive(number)) {
+        std::cout << number << " является положительным числом." << std::endl;
+    } else {
+        std::cout << number << " является отрицательным числом." << std::endl;
+    }
+
+    return 0;
+}
