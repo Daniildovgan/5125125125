@@ -1,0 +1,23 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+void printCard(string rank, string suit) {
+    cout << "┌───────┐" << endl;
+    cout << "│ " << rank << "     │" << endl;
+    cout << "│       │" << endl;
+    cout << "│   " << suit << "   │" << endl;
+    cout << "│       │" << endl;
+    cout << "│     " << rank << " │" << endl;
+    cout << "└───────┘" << endl;
+}
+
+int main() {
+    string rank = "10"; 
+    string suit = "♥";  
+
+    printCard(rank, suit);
+
+    return 0;
+}
