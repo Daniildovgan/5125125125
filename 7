@@ -1,0 +1,24 @@
+#include <iostream>
+
+double power(double base, int exponent) {
+    double result = 1.0;
+    for (int i = 0; i < abs(exponent); ++i) {
+        result *= base;
+    }
+    if (exponent < 0) {
+        return 1.0 / result;
+    }
+    return result;
+}
+
+int main() {
+    double base;
+    int exponent;
+    std::cout << "Введите основание степени: ";
+    std::cin >> base;
+    std::cout << "Введите показатель степени: ";
+    std::cin >> exponent;
+
+    std::cout << base << " в степени " << exponent << " = " << power(base, exponent) << std::endl;
+    return 0;
+}
